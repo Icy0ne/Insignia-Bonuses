@@ -55,37 +55,37 @@ var insignia = {
     "?": "FIXME"
 };
 var bonuses = [
-    {itemName: "-- bonuses --", slots: "", description: ""},
-    {itemName: "-- mounts --", slots: "", description: ""},
-    {itemName: "Vampire's Craving", slots: "AAB", description: "Whenever you perform a Lifesteal, you are healed for 3% of your maximum Hit Points over 4 seconds."},
-    {itemName: "Survivor's Blessing", slots: "AAC", description: "Whenever you Deflect an attack, you are healed for 3% of your maximum Hit Points over 4 seconds."},
-    {itemName: "Slayer's Redemption", slots: "AAE", description: "Whenever you kill a target, you are healed for 10% of your maximum Hit Points over 5 seconds."},
-    {itemName: "Oppressor's Reprieve", slots: "ADD", description: "Whenever you are Stunned, Knocked, or Immobilized, you are healed for 4% of your maximum Hit Points over 4 seconds."},
-    {itemName: "Barbarian's Revelry", slots: "AEE", description: "Whenever you perform a Critical Strike, you are healed for 1.5% of your maximum Hit Points. This effect can only occur once every 2 seconds."},
-    {itemName: "Protector's Camaraderie", slots: "BBC", description: "Whenever your summoned Companion attacks, you gain 3% of your Power and Defense for 10 seconds. This effect can stack up to 4 times."},
-    {itemName: "Combatant's Maneuver", slots: "BBD", description: "Whenever you control an enemy, you gain 5% Combat Advantage damage for 10 seconds."},
-    {itemName: "Warlord's Inspiration", slots: "BBE", description: "Your summoned Companion does 20% more damage."},
-    {itemName: "Alchemist's Invigoration", slots: "BDD", description: "Whenever you drink a Healing Potion, you are granted 5% more Power and Defense for 10 seconds."},
-    {itemName: "Victim's Preservation", slots: "ACC", description: "Whenever you take greater than 35% of your Maximum Hit Points in pre-mitigated damage from a single blow, you are healed for 10% of your maximum Hit Points over 5 seconds. This effect can occur once every 10 seconds."},
-    {itemName: "Artificer's Persuasion", slots: "CCD", description: "Whenever you use an Artifact power, your Recovery, Movement, Action Point Gain, and Stamina Gain are increased by 10% of your Power for 15 seconds."},
-    {itemName: "Magistrate's Patience", slots: "CCE", description: "Whenever you perform a Critical Strike, your target will gain a stack of Magistrate's Consideration. Enemies affected by Magistrate's Consideration take Psychic Damage equal to 10% of your Power over 4 seconds. Allies affected by Magistrate's Consideration are healed for 3% of your maximum Hit Points over 4 seconds."},
-    {itemName: "Berserker's Rage", slots: "CDD", description: "While you have full Action Points, you gain 10% of your Armor Penetration as Power."},
-    {itemName: "Champion's Return", slots: "DEE", description: "Whenever you are reduced to 50% Hit Points, you instantly recover 20% of your Stamina and are healed for 20% of your maximum Hit Points over 10 seconds. This effect can only occur once every 60 seconds."},
-    {itemName: "Assassin's Covenant", slots: "BEE", description: "You lose 10% of your Defense, Deflection, and Life Steal, and gain the combination of lost stats as Power."},
-    {itemName: "Wanderer's Fortune", slots: "ABD", description: "You have a 4% chance after killing a foe to find a Refining Stone at your feet."},
-    {itemName: "Cavalry's Warning", slots: "ACE", description: "Whenever you activate a Mount Combat Power, you gain an increase of 10% to your Power, Recovery, Armor Penetration, Critical Strike, Defense, Deflection, Regeneration, and Life Steal."},
-    {itemName: "Shepherd's Devotion", slots: "BCD", description: "Whenever you use a Daily power, your teammates Defense, Deflection, and Movement are increased by 5% of your Power for 10 seconds."},
-    {itemName: "Gladiator's Guile", slots: "BDE", description: "When your Stamina is above 75%, you move 15% faster. When your Stamina is below 25%, gain 15% of your Power as Stamina Gain."},
-    {itemName: "Vampire's Thirst", slots: "AB", description: "Whenever you perform a Lifesteal, you are healed for 1.2% of your maximum Hit Points over 4 seconds."},
-    {itemName: "Survivor's Gift", slots: "AC", description: "Whenever you Deflect an attack, you are healed for 1.2% of your maximum Hit Points over 4 seconds."},
-    {itemName: "Oppressor's Respite", slots: "AD", description: "Whenever you are Stunned, Knocked, or Immobilized, you are healed for 1% of your maximum Hit Points over 4 seconds."},
-    {itemName: "Barbarian's Delight", slots: "AE", description: "Whenever you perform a Critical Strike, you are healed for 0.5% of your maximum Hit Points. This effect can only occur once every 2 seconds."},
-    {itemName: "Protector's Friendship", slots: "BC", description: "Whenever your summoned Companion attacks, you gain 1% of your Power and Defense for 10 seconds. This effect can stack up to 4 times."},
-    {itemName: "Warlord's Encouragement", slots: "BE", description: "Your summoned Companion does 10% more damage."},
-    {itemName: "Alchemist's Refresher", slots: "BD", description: "Whenever you drink a Healing Potion, you are granted 2% more Power and Defense for 10 seconds."},
-    {itemName: "Artificer's Influence", slots: "CD", description: "Whenever you use an Artifact power, your Recovery, Movement, Action Point Gain, and Stamina Gain are increased by 5% of your Power for 15 seconds."},
-    {itemName: "Magistrate's Restraint", slots: "CE", description: "Whenever you perform a Critical Strike, your target will gain a stack of Magistrate's Consideration. Enemies affected by Magistrate's Consideration take Psychic Damage equal to 10% of your Power over 4 seconds. Allies affected by Magistrate's Consideration are healed for 3% of your maximum Hit Points over 4 seconds."},
-    {itemName: "Champion's Struggle", slots: "DE", description: "Whenever you are reduced to 50% Hit Points, you instantly recover 10% of your Stamina and are healed for 10% of your maximum Hit Points over 10 seconds. This effect can only occur once every 60 seconds."}
+    {itemName: "-- All Bonuses --", 			slots: "", 		stat: 0, 	bonus: "", 				description: ""},
+    {itemName: "-- All Mounts --", 				slots: "", 		stat: 0, 	bonus: "", 				description: ""},
+	{itemName: "Alchemist's Invigoration", 	slots: "BDD", 	stat: 5, 	bonus: "Alchemist", 	description: "Whenever you drink a Healing Potion, you are granted 5% more Power and Defense for 10 seconds."},
+    {itemName: "Alchemist's Refresher", 	slots: "BD", 	stat: 2, 	bonus: "Alchemist", 	description: "Whenever you drink a Healing Potion, you are granted 2% more Power and Defense for 10 seconds."},
+    {itemName: "Artificer's Influence", 	slots: "CD", 	stat: 5, 	bonus: "Artificer", 	description: "Whenever you use an Artifact power, your Recovery, Movement, Action Point Gain, and Stamina Gain are increased by 5% of your Power for 15 seconds."},
+    {itemName: "Artificer's Persuasion", 	slots: "CCD", 	stat: 10, 	bonus: "Artificer", 	description: "Whenever you use an Artifact power, your Recovery, Movement, Action Point Gain, and Stamina Gain are increased by 10% of your Power for 15 seconds."},
+    {itemName: "Assassin's Covenant", 		slots: "BEE", 	stat: 10, 	bonus: "Assassin", 		description: "You lose 10% of your Defense, Deflection, and Life Steal, and gain the combination of lost stats as Power."},
+    {itemName: "Barbarian's Delight", 		slots: "AE", 	stat: 0.5, 	bonus: "Barbarian", 	description: "Whenever you perform a Critical Strike, you are healed for 0.5% of your maximum Hit Points. This effect can only occur once every 2 seconds."},
+    {itemName: "Barbarian's Revelry", 		slots: "AEE", 	stat: 1.5, 	bonus: "Barbarian", 	description: "Whenever you perform a Critical Strike, you are healed for 1.5% of your maximum Hit Points. This effect can only occur once every 2 seconds."},
+    {itemName: "Berserker's Rage", 			slots: "CDD", 	stat: 10, 	bonus: "Berserker", 	description: "While you have full Action Points, you gain 10% of your Armor Penetration as Power."},
+    {itemName: "Cavalry's Warning", 		slots: "ACE", 	stat: 10, 	bonus: "Cavalry", 		description: "Whenever you activate a Mount Combat Power, you gain an increase of 10% to your Power, Recovery, Armor Penetration, Critical Strike, Defense, Deflection, Regeneration, and Life Steal."},
+    {itemName: "Champion's Return", 		slots: "DEE", 	stat: 20, 	bonus: "Champion", 		description: "Whenever you are reduced to 50% Hit Points, you instantly recover 20% of your Stamina and are healed for 20% of your maximum Hit Points over 10 seconds. This effect can only occur once every 60 seconds."},
+    {itemName: "Champion's Struggle", 		slots: "DE", 	stat: 10, 	bonus: "Champion", 		description: "Whenever you are reduced to 50% Hit Points, you instantly recover 10% of your Stamina and are healed for 10% of your maximum Hit Points over 10 seconds. This effect can only occur once every 60 seconds."},
+    {itemName: "Combatant's Maneuver",		slots: "BBD", 	stat: 5, 	bonus: "Combatant", 	description: "Whenever you control an enemy, you gain 5% Combat Advantage damage for 10 seconds."},
+    {itemName: "Gladiator's Guile", 		slots: "BDE", 	stat: 15, 	bonus: "Gladiator", 	description: "When your Stamina is above 75%, you move 15% faster. When your Stamina is below 25%, gain 15% of your Power as Stamina Gain."},
+    {itemName: "Magistrate's Patience", 	slots: "CCE", 	stat: 10, 	bonus: "Magistrate", 	description: "Whenever you perform a Critical Strike, your target will gain a stack of Magistrate's Consideration. Enemies affected by Magistrate's Consideration take Psychic Damage equal to 10% of your Power over 4 seconds. Allies affected by Magistrate's Consideration are healed for 3% of your maximum Hit Points over 4 seconds."},
+    {itemName: "Magistrate's Restraint", 	slots: "CE", 	stat: 10, 	bonus: "Magistrate", 	description: "Whenever you perform a Critical Strike, your target will gain a stack of Magistrate's Consideration. Enemies affected by Magistrate's Consideration take Psychic Damage equal to 10% of your Power over 4 seconds. Allies affected by Magistrate's Consideration are healed for 3% of your maximum Hit Points over 4 seconds."},
+    {itemName: "Oppressor's Reprieve", 		slots: "ADD", 	stat: 4, 	bonus: "Oppressor", 	description: "Whenever you are Stunned, Knocked, or Immobilized, you are healed for 4% of your maximum Hit Points over 4 seconds."},
+    {itemName: "Oppressor's Respite", 		slots: "AD", 	stat: 1, 	bonus: "Oppressor", 	description: "Whenever you are Stunned, Knocked, or Immobilized, you are healed for 1% of your maximum Hit Points over 4 seconds."},
+    {itemName: "Protector's Camaraderie", 	slots: "BBC", 	stat: 3, 	bonus: "Protector", 	description: "Whenever your summoned Companion attacks, you gain 3% of your Power and Defense for 10 seconds. This effect can stack up to 4 times."},
+    {itemName: "Protector's Friendship", 	slots: "BC", 	stat: 1, 	bonus: "Protector", 	description: "Whenever your summoned Companion attacks, you gain 1% of your Power and Defense for 10 seconds. This effect can stack up to 4 times."},
+    {itemName: "Shepherd's Devotion", 		slots: "BCD", 	stat: 5, 	bonus: "Shepherd'", 	description: "Whenever you use a Daily power, your teammates Defense, Deflection, and Movement are increased by 5% of your Power for 10 seconds."},
+    {itemName: "Slayer's Redemption", 		slots: "AAE", 	stat: 10, 	bonus: "Slayer", 		description: "Whenever you kill a target, you are healed for 10% of your maximum Hit Points over 5 seconds."},
+    {itemName: "Survivor's Blessing", 		slots: "AAC", 	stat: 3, 	bonus: "Survivor", 		description: "Whenever you Deflect an attack, you are healed for 3% of your maximum Hit Points over 4 seconds."},
+    {itemName: "Survivor's Gift", 			slots: "AC", 	stat: 1.2, 	bonus: "Survivor", 		description: "Whenever you Deflect an attack, you are healed for 1.2% of your maximum Hit Points over 4 seconds."},
+    {itemName: "Vampire's Craving", 		slots: "AAB", 	stat: 3, 	bonus: "Vampire", 		description: "Whenever you perform a Lifesteal, you are healed for 3% of your maximum Hit Points over 4 seconds."},
+    {itemName: "Vampire's Thirst", 			slots: "AB", 	stat: 1.2, 	bonus: "Vampire", 		description: "Whenever you perform a Lifesteal, you are healed for 1.2% of your maximum Hit Points over 4 seconds."},
+    {itemName: "Victim's Preservation", 	slots: "ACC", 	stat: 10, 	bonus: "Victim", 		description: "Whenever you take greater than 35% of your Maximum Hit Points in pre-mitigated damage from a single blow, you are healed for 10% of your maximum Hit Points over 5 seconds. This effect can occur once every 10 seconds."},
+    {itemName: "Wanderer's Fortune", 		slots: "ABD", 	stat: 4, 	bonus: "Wanderer", 		description: "You have a 4% chance after killing a foe to find a Refining Stone at your feet."},
+    {itemName: "Warlord's Encouragement", 	slots: "BE", 	stat: 10, 	bonus: "Warlord", 		description: "Your summoned Companion does 10% more damage."},
+    {itemName: "Warlord's Inspiration", 	slots: "BBE", 	stat: 20, 	bonus: "Warlord", 		description: "Your summoned Companion does 20% more damage."}
 ];
 var mounts = [
 	{itemName: "Arcane Whirlwind", slots: "CUU", quality: "legendary"},
@@ -377,7 +377,9 @@ function initialize() {
     var cell;
     var link;
 	bonuses.sort(function (a, b) {
-		return a.itemName.localeCompare(b.itemName);
+		var acompare=a.bonus+(100-a.stat)+a.itemName;
+		var bcompare=b.bonus+(100-b.stat)+b.itemName;
+		return acompare.localeCompare(bcompare);
 	});
 	mounts.sort(function (a, b) {
 		var ordera=0;
@@ -435,12 +437,18 @@ function initialize() {
         cell.textContent = bonuses[i].description;
         i += 1;
     }
-    var option;
+    var option, optGroup, prevOptGroup;
     var select = document.getElementById("select");
     i = 0;
     while (i < bonuses.length) {
+		if (bonuses[i].bonus!=prevOptGroup && bonuses[i].bonus!='') {
+			optGroup = document.createElement("optgroup");
+			optGroup.label = bonuses[i].bonus;
+			select.add(optGroup);
+			prevOptGroup=bonuses[i].bonus;
+		}
         option = document.createElement("option");
-        option.text = bonuses[i].itemName;
+        option.text = bonuses[i].itemName + (bonuses[i].stat>0?' ' + bonuses[i].stat + '%':'');
         option.value = i;
         select.add(option);
         i += 1;
